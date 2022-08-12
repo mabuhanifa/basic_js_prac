@@ -60,3 +60,19 @@ console.log(
     { name: "babul", friend: "abul" }
   )
 );
+
+function publicBusFare (visitor){
+    let bus = 50;
+    let microBus = 11;
+    let busAmount = (visitor%bus);
+    let microBusAmount = busAmount%microBus;
+     if (typeof visitor !== "number" || visitor <= 50) {
+          return "Please enter a number of vistors and the number of visitors should be more than 50"
+  }  
+    else{
+      return microBusAmount *250;
+    }
+    
+  };
+  
+  console.log(publicBusFare(110));
