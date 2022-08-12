@@ -46,3 +46,17 @@ function oilPrice(dieselQuantity, petrolQuantity, octaneQuantity) {
 }
 
 console.log(oilPrice(30, 20, 10));
+
+function isBestFriend() {
+  return (
+    arguments[0].name === arguments[1].friend &&
+    arguments[0].friend === arguments[1].name
+  );
+}
+
+console.log(
+  isBestFriend(
+    { name: "abul", friend: "babul" },
+    { name: "babul", friend: "abul" }
+  )
+);
