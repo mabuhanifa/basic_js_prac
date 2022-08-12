@@ -8,7 +8,6 @@ function radianToDegree(radian) {
     return (radian * (180 / Math.PI)).toFixed(2);
   }
 }
-console.log(radianToDegree(5));
 
 /*-------------problem 2----------------*/
 function isJavaScriptFile(filename) {
@@ -19,8 +18,6 @@ function isJavaScriptFile(filename) {
   }
   return filename.split(".").pop() === "js";
 }
-
-console.log(isJavaScriptFile("index.js.js"));
 
 /*-------------problem 3----------------*/
 function oilPrice(dieselQuantity, petrolQuantity, octaneQuantity) {
@@ -51,8 +48,6 @@ function oilPrice(dieselQuantity, petrolQuantity, octaneQuantity) {
   return totalPrice;
 }
 
-console.log(oilPrice(30, 20, 10));
-
 /*-------------problem 4----------------*/
 function publicBusFare(visitor) {
   // price calculation
@@ -69,8 +64,6 @@ function publicBusFare(visitor) {
   }
 }
 
-console.log(publicBusFare(110));
-
 /*-------------problem 5----------------*/
 function isBestFriend() {
   return (
@@ -78,10 +71,3 @@ function isBestFriend() {
     arguments[0].friend === arguments[1].name
   );
 }
-
-console.log(
-  isBestFriend(
-    { name: "abul", friend: "babul" },
-    { name: "babul", friend: "abul" }
-  )
-);
