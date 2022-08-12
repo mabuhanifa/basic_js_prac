@@ -7,3 +7,13 @@ function radianToDegree(radian) {
   }
 }
 console.log(radianToDegree(5));
+
+function isJavaScriptFile(filename) {
+  if (typeof filename !== "string") {
+    alert("enter a string");
+    return;
+  }
+  return filename.split(".").pop() === "js";
+}
+
+console.log(isJavaScriptFile("index.js.js"));
