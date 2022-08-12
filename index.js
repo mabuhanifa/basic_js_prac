@@ -1,7 +1,6 @@
 function radianToDegree(radian) {
   if (typeof radian !== "number") {
-    alert("please enter a number");
-    return;
+    return "please enter a number";
   } else {
     return (radian * (180 / Math.PI)).toFixed(2);
   }
@@ -10,8 +9,7 @@ console.log(radianToDegree(5));
 
 function isJavaScriptFile(filename) {
   if (typeof filename !== "string") {
-    alert("enter a string");
-    return;
+    return "enter a string";
   }
   return filename.split(".").pop() === "js";
 }
@@ -61,18 +59,16 @@ console.log(
   )
 );
 
-function publicBusFare (visitor){
-    let bus = 50;
-    let microBus = 11;
-    let busAmount = (visitor%bus);
-    let microBusAmount = busAmount%microBus;
-     if (typeof visitor !== "number" || visitor <= 50) {
-          return "Please enter a number of vistors and the number of visitors should be more than 50"
-  }  
-    else{
-      return microBusAmount *250;
-    }
-    
-  };
-  
-  console.log(publicBusFare(110));
+function publicBusFare(visitor) {
+  let bus = 50;
+  let microBus = 11;
+  let busAmount = visitor % bus;
+  let microBusAmount = busAmount % microBus;
+  if (typeof visitor !== "number" || visitor <= 50) {
+    return "Please enter a number of visitors and the number of visitors should be more than 50";
+  } else {
+    return microBusAmount * 250;
+  }
+}
+
+console.log(publicBusFare(110));
