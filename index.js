@@ -1,4 +1,4 @@
-/*-------------problem 1----------------*/
+
 function radianToDegree(radian) {
   //error handling
   if (typeof radian !== "number") {
@@ -9,7 +9,6 @@ function radianToDegree(radian) {
   }
 }
 
-/*-------------problem 2----------------*/
 function isJavaScriptFile(filename) {
   //error handling
   if (typeof filename !== "string") {
@@ -19,7 +18,6 @@ function isJavaScriptFile(filename) {
   return filename.split(".").pop() === "js";
 }
 
-/*-------------problem 3----------------*/
 function oilPrice(dieselQuantity, petrolQuantity, octaneQuantity) {
   //error handling
   if (
@@ -48,7 +46,6 @@ function oilPrice(dieselQuantity, petrolQuantity, octaneQuantity) {
   return totalPrice;
 }
 
-/*-------------problem 4----------------*/
 function publicBusFare(visitor) {
   // price calculation
   let bus = 50;
@@ -64,7 +61,6 @@ function publicBusFare(visitor) {
   }
 }
 
-/*-------------problem 5----------------*/
 function isBestFriend() {
   return (
     arguments[0].name === arguments[1].friend &&
